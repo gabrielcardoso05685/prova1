@@ -8,17 +8,17 @@ def calculo_imc():
     peso = request.form(peso),
     altura  = request.form(altura),
     indice_imc = peso / altura ^ 2
-    indice = float()
+    indice_imc = float(indice_imc)
 
    return (indice)
 
 @app.route('/', methods=['GET', 'POST'])
+
+
+@app.route('/', methods=['POST'])
 def pagina_inicial():
    if request.method == 'POST':
-         
-       
-     
-   
+        
         return render_template ('index.html',
                                 nome=nome,
                                 peso=peso,
